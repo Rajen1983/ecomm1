@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+#main_bus{
+display:grid;
+grid-template-columns: repeat(4, 1fr);
+
+}
+#main_bus div{
+    width:auto;
+    height:450px;
+    border: 2px solid gray;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+   
+}
+h1,p{color: rgb(41, 103, 235);
+margin:5px}
+#main_bus div img{
+    margin-top: 10px;
+    height:50%;
+    width:70%;
+    border: 2px solid rgb(166, 239, 174); 
+    border-radius: 10px;   
+}
+
+#main_bus div button{
+    width: 100px;
+    height: 30px;
+    /* padding: 5px 10px; */
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(64, 220, 64);
+}
+p:hover, h1:hover, a:hover, button:hover {
+  color: rgb(232, 31, 118);
+}
+button:hover{color:yellow}
+
+@media screen and (min-width:260px) and (max-width: 480px){
+    #main_bus{
+display:grid;
+grid-template-columns: repeat(1, 1fr);
+}
+h1,p{color: rgb(41, 103, 235);
+}
+#main_bus div{
+    /* width: 300px; */
+    height: 480px;
+}
+}
+@media screen and (min-width:490px) and (max-width: 880px){
+    #main_bus{
+display:grid;
+grid-template-columns: repeat(2, 1fr);
+}
+#main_bus div{
+    /* width: 300px; */
+    height: 400px;
+}
+}
+#main_bus div img{
+    width:70%;  
+}
+
+</style>
+</head>
+<body>
+    <div id="main_bus">
+
+    </div>
+</body>
+<script>
+    let bus=document.createElement("div")
+    let image=document.createElement("img")
+    image.src="https://neurosciencenews.com/files/2023/05/happiness-timing-neurosicenec.jpg"
+let title=document.createElement("h1")
+title.innerText="Smile"
+let detail=document.createElement("p")
+detail.innerText="Typically, happiness is an emotional state characterized by feelings of joy, satisfaction, contentment, and fulfillment. While happiness has many different definitions, it is often described as involving positive emotions and life satisfaction"
+let btn=document.createElement("button")
+btn.innerText="BUY"
+bus.append(image,title,detail,btn)
+
+// ------------------BUS1---------------------
+
+let bus1=document.createElement("div")
+    let image1=document.createElement("img")
+    image1.src="https://img.freepik.com/premium-photo/portrait-happy-indian-asian-young-family-while-sitting-sofa-lying-floor-sitting-against-wall_466689-7314.jpg"
+let title1=document.createElement("h1")
+title1.innerText="Family"
+let detail1=document.createElement("p")
+detail1.innerText="A family is a group of two or more persons related by birth, marriage, or adoption who live together; all such related persons are considered as members of one family."
+let btn1=document.createElement("button")
+btn1.innerText="BUY"
+bus1.append(image1,title1,detail1,btn1)
+
+// ------------------BUS2---------------------
+
+let bus2=document.createElement("div")
+    let image2=document.createElement("img")
+    image2.src="https://www.shutterstock.com/image-photo/three-friends-drinking-beer-600nw-271332911.jpg"
+let title2=document.createElement("h1")
+title2.innerText="Friend"
+let detail2=document.createElement("p")
+detail2.innerText="a person that you know and like (not a member of your family), and who likes you"
+let btn2=document.createElement("button")
+btn2.innerText="BUY"
+bus2.append(image2,title2,detail2,btn2)
+
+// ------------------BUS3---------------------
+
+let bus3=document.createElement("div")
+    let image3=document.createElement("img")
+    image3.src="https://www.punjabkesari.com/wp-content/uploads/2024/02/tension.jpg"
+let title3=document.createElement("h1")
+title3.innerText="Tension"
+let detail3=document.createElement("p")
+detail3.innerText="alwaysthe condition of not being able to relax because you are worried or nervous"
+let btn3=document.createElement("button")
+btn3.innerText="BUY"
+bus3.append(image3,title3,detail3,btn3)
+
+// ------------------BUS4---------------------
+
+let bus4=document.createElement("div")
+    let image4=document.createElement("img")
+    image4.src="https://static2.bigstockphoto.com/4/5/6/large2/65440327.jpg"
+let title4=document.createElement("h1")
+title4.innerText="Good luck"
+let detail4=document.createElement("p")
+detail4.innerText="used to express wishes for success."
+let btn4=document.createElement("button")
+btn4.innerText="BUY"
+bus4.append(image4,title4,detail4,btn4)
+
+// ------------------BUS5---------------------
+
+let bus5=document.createElement("div")
+    let image5=document.createElement("img")
+    image5.src="https://markmanson.net/wp-content/uploads/2023/08/how-to-be-successful-in-life-cover.png"
+let title5=document.createElement("h1")
+title5.innerText="success"
+let detail5=document.createElement("p")
+detail5.innerText="the fact that you have achieved what you want; doing well and becoming famous, rich, etc."
+let btn5=document.createElement("button")
+btn5.innerText="BUY"
+bus5.append(image5,title5,detail5,btn5)
+
+// ------------------BUS6---------------------
+
+let bus6=document.createElement("div")
+    let image6=document.createElement("img")
+    image6.src="https://cdn.mos.cms.futurecdn.net/9meMCxtJU3NWkh5YcPs7qG.jpg"
+let title6=document.createElement("h1")
+title6.innerText="Time"
+let detail6=document.createElement("p")
+detail6.innerText="Time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, and into the future."
+let btn6=document.createElement("button")
+btn6.innerText="Not Available"
+bus6.append(image6,title6,detail6,btn6)
+
+// ------------------BUS7---------------------
+let bus7=document.createElement("div")
+    let image7=document.createElement("img")
+    image7.src="https://img.freepik.com/free-photo/job-hiring-vacancy-team-interview-career-recruiting_53876-121268.jpg"
+let title7=document.createElement("h1")
+title7.innerText="Jobs"
+let detail7=document.createElement("p")
+detail7.innerText="A job is any legal activity that allows an individual to perform a service and in return earn credits they can use to buy things."
+let btn7=document.createElement("button")
+btn7.innerText="Not Available"
+bus7.append(image7,title7,detail7,btn7)
+
+
+// ------------------BUS8---------------------
+let main_bus =document.getElementById("main_bus")
+main_bus.append(bus)
+main_bus.append(bus1)
+main_bus.append(bus2)
+main_bus.append(bus3)
+main_bus.append(bus4)
+main_bus.append(bus5)
+main_bus.append(bus6)
+main_bus.append(bus7)
+// console.log(main_bus);
+</script>
+</html>
